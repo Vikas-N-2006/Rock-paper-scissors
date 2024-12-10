@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h1 {
+  background-color: #2c2c54;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+}
+.choice {
+  width: 165px;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.choice:hover {
+  background-color: #170312;
+  cursor: pointer;
+}
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 5rem;
+}
+#user-score,
+#comp-score {
+  font-size: 5rem;
+}
+.score {
+  font-size: 2rem;
+}
+#msg {
+  background-color: #2c2c54;
+  color: white;
+  font-size: 2rem;
+  display: inline-flex;
+  margin-top: 3rem;
+  padding: 15px;
+  border-radius: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .choices {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .choice {
+    width: 140px;
+    height: 140px;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+  }
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  .score {
+    font-size: 1.5rem;
+  }
+  #msg {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .choices {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .choice {
+    width: 120px;
+    height: 120px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  #user-score,
+  #comp-score {
+    font-size: 3.5rem;
+  }
+  .score {
+    font-size: 1.3rem;
+  }
+  #msg {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .choices {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .choice {
+    width: 100px;
+    height: 100px;
+  }
+  img {
+    width: 85px;
+    height: 85px;
+  }
+  #user-score,
+  #comp-score {
+    font-size: 3rem;
+  }
+  .score {
+    font-size: 1rem;
+  }
+  #msg {
+    font-size: 1.2rem;
+    padding: 8px;
+  }
+}
